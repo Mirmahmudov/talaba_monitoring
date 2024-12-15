@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- <link rel="stylesheet" href="./"> -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./home.html  ">Talaba</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./home.html">Bosh sahifa</a></li>
+            
+            <li><a href="./talaba.html">Talabalar</a></li>
+            <li><a href="./admin-dashboard.html">statistika</a></li>
+            <li><a href="contact.html" class="active">Bog'lanish</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container ">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="responseMessage" class="response-message"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Talabalar Tizimi. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

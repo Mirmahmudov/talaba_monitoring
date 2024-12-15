@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Student</title>
+  <link rel="stylesheet" href="./talaba.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="./home.html  ">Talaba</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="./home.html">Bosh sahifa</a></li>
+      <li><a href="./talaba.html">Talabalar</a></li>
+      <li><a href="./admin-dashboard.html"  class="active">statistika</a></li>
+      <li><a href="contact.html">Bog'lanish</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <h1>Add New Student</h1>
+      <nav>
+        <a href="./talaba.html" class="btn">Back to Student List</a>
+      </nav>
+    </header>
+
+    <form id="addStudentForm">
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" required>
+
+      <label for="studentAge">Age:</label>
+      <input type="number" id="studentAge" required>
+
+      <label for="studentEmail">Email:</label>
+      <input type="email" id="studentEmail" required>
+
+      <label for="studentAddress">Address:</label>
+      <input type="text" id="studentAddress" required>
+
+      <button type="submit" class="btn">Add Student</button>
+    </form>
+  </div>
+
+  <script src="./addTalaba.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+
+
+}
+
+.dashboard-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 50px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #007BFF;
+}
+
+.logout-btn {
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-btn:hover {
+  background-color: #E64A3C;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: #007BFF;
+  color: white;
+  width: 28%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  margin: 10px 0;
+}
+
+.stat-card p {
+  font-size: 24px;
+}
+
+.stat-card span {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Charts Section */
+.charts {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+canvas {
+  width: 100%;
+  height: 300px;
+}
+
+/* Quick Links Section */
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.quick-links button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.quick-links button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4facfe;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  background-color: #007BFF;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

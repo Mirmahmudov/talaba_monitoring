@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./admin-dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="./home.html  ">Talaba</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="./home.html">Bosh sahifa</a></li>
+      <li><a href="./talaba.html">Talabalar</a></li>
+      <li><a href="./admin-dashboard.html"  class="active">statistika</a></li>
+      <li><a href="contact.html">Bog'lanish</a></li>
+    </ul>
+  </nav>
+  
+  <div class="dashboard-container">
+    <div class="header">
+      <h1>Boshqaruv paneliga xush kelibsiz</h1>
+      <button class="logout-btn" onclick="logout()">Chiqish</button>
+    </div>
+
+    <div class="statistics">
+      <div class="stat-card">
+        <span class="material-icons">school</span>
+        <h3>Jami talabalar</h3>
+        <p id="totalStudents">0</p>
+      </div>
+      <div class="stat-card">
+        <span class="material-icons">star</span>
+        <h3>Umumiy reyting</h3>
+        <p id="overallRating">0%</p>
+      </div>
+      <div class="stat-card">
+        <span class="material-icons">check_circle</span>
+        <h3>Muvaffaqiyatli testlar</h3>
+        <p id="successfulTests">0</p>
+      </div>
+    </div>
+
+    <div class="charts">
+      <canvas id="studentChart"></canvas>
+    </div>
+
+   
+  </div>
+
+  <script src="./admin-dashboard.js"></script>
+</body>
+</html>

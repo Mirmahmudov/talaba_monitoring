@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List</title>
+  <link rel="stylesheet" href="./talaba1.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="./home.html  ">Talaba</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="./home.html">Bosh sahifa</a></li>  
+
+      <li><a href="./talaba.html" class="active">Talabalar</a></li>
+      <li><a href="./admin-dashboard.html">statistika</a></li>
+      <li><a href="./contact.html">Bog'lanish</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <h1>Talabalarni boshqarish</h1>
+      <nav>
+        <a href="./addTalaba.html" class="btn">Yangi talaba qo'shish</a>
+      </nav>
+    </header>
+
+    <div class="table-container">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Edit Student</h2>
+      <form id="editForm">
+        <label for="editName">Name</label>
+        <input type="text" id="editName" required>
+        <label for="editAge">Age</label>
+        <input type="number" id="editAge" required>
+        <label for="editEmail">Email</label>
+        <input type="email" id="editEmail" required>
+        <label for="editAddress">Address</label>
+        <input type="text" id="editAddress" required>
+        <button type="submit" class="btn">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./talaba.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Talabalar Tizimi. Barcha huquqlar himoyalangan.</p>
+  </footer>
+</body>
+
+</html>
